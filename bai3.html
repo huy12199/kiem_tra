@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="kiem_tra" type="text">
+<button onclick="kiem_tra()">kiểm_tra</button>
+</body>
+</html>
+
+<script>
+    function kiem_tra(){
+    let a = +document.getElementById("kiem_tra").value
+    if (a%2==0){
+        console.log("a chia hết cho 2")
+    }
+    else {
+        let i = 2;
+        let check = true
+        for (;i<(a/2);i++){
+            if (a%i===0){
+                check = false;
+                break;
+            }
+        }
+        if (check){
+            console.log("là số nguyên tố")
+        }
+        else {
+            console.log("không phải số nguyên tố")
+        }
+    }
+    }
+</script>

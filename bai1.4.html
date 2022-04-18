@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="ket_qua">ket_qua</p>
+</body>
+</html>
+
+<script>
+    let a = +prompt("số năm ");
+    if (a%100===0){
+        document.getElementById("ket_qua").innerHTML = "thế kỷ" + Math.floor(a/100)
+    }
+    else {
+        document.getElementById("ket_qua").innerHTML = "thế kỷ " + (Math.floor(a/100) + 1)
+    }
+
+</script>
